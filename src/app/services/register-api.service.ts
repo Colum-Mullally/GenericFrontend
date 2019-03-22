@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {Observable, of, pipe, throwError} from 'rxjs';
 import {HttpClient, HttpHeaders, HttpErrorResponse, HttpParams} from '@angular/common/http';
 import { catchError, tap, map } from 'rxjs/operators';
-const  url = 'http://localhost:8090';
+const  url = 'https://colum-mullally-fyp-webservice.herokuapp.com';
 const apiUrl = url + '/v1/register';
 @Injectable({
   providedIn: 'root'
