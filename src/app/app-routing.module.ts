@@ -3,9 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AdminComponent } from './admin/admin.component';
-
+import { UserdetailsComponent  } from './userdetails/userdetails.component';
 
 const routes: Routes = [
+  {
+    path: 'userdetails',
+    component: UserdetailsComponent,
+    data: { title: 'User details' }
+  },
   {
     path: 'login',
     component: LoginComponent,

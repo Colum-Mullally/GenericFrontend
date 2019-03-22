@@ -10,9 +10,10 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'fyp-front-end';
   constructor(private app: AthenticationService, private http: HttpClient, private router: Router) {
-    this.app.authenticate(undefined, undefined);
+    this.app.authenticate(undefined, undefined , () => {});
   }
   logout() {
+      sessionStorage.removeItem('credentials');
       this.app.authenticated = false;
       this.router.navigateByUrl('/login');
   }

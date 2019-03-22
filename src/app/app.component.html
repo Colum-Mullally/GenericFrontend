@@ -4,9 +4,9 @@
 </div>
 <div class="container">
   <ul class="nav nav-pills">
-    <li><a routerLinkActive="active" routerLink="/register">Register</a></li>
-    <li><a routerLinkActive="active" routerLink="/login">Login</a></li>
-    <li><a (click)="logout()">Logout</a></li>
+    <button routerLink="/register" mat-flat-button color="primary">Register</button>
+    <button routerLink="/login" mat-flat-button color="primary">Login</button>
+    <button mat-flat-button color="primary"><a routerLinkActive="active" (click)=logout()>Logout</a></button>
   </ul>
 </div>
 <router-outlet></router-outlet>
