@@ -1,0 +1,30 @@
+<div class="example-loading-shade"
+     *ngIf="isLoadingResults">
+  <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+</div>
+<div>
+  <div>
+    <mat-card class="example-card">
+      <mat-card-header >
+        <mat-card-title><h2>{{pdf.name}}</h2></mat-card-title>
+        <mat-card-subtitle>{{pdf.url}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <div *ngFor="let attribute of pdf.attributes ; let i =index">
+          <dl>
+            <dd>{{attribute.name}}</dd>
+            <input type="text" value="{{attribute.content}}" name = "{{i}}" (change) ="onFieldupdate($event)">
+          </dl>
+        </div>
+      </mat-card-content>
+      <div class="example-loading-shade"
+           *ngIf="isLoadingResults">
+        <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+      </div>
+      <mat-card-actions>
+        <a mat-flat-button color="primary" (click)="updateAllFields()"><mat-icon>update</mat-icon></a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+

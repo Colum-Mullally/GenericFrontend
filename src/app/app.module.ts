@@ -19,6 +19,12 @@ import {
   MatCardModule,
   MatFormFieldModule } from '@angular/material';
 import { UserdetailsComponent } from './userdetails/userdetails.component';
+import { AddComponent } from './add/add.component';
+import { ViewFormComponent } from './view-form/view-form.component';
+import { DeleteFormComponent } from './delete-form/delete-form.component';
+import { EditFormComponent } from './edit-form/edit-form.component';
+import { DownloadFormComponent } from './download-form/download-form.component';
+import { DownloadandViewFormComponent } from './downloadand-view-form/downloadand-view-form.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +32,13 @@ import { UserdetailsComponent } from './userdetails/userdetails.component';
     RegisterComponent,
     LoginComponent,
     AdminComponent,
-    UserdetailsComponent
+    UserdetailsComponent,
+    AddComponent,
+    ViewFormComponent,
+    DeleteFormComponent,
+    EditFormComponent,
+    DownloadFormComponent,
+    DownloadandViewFormComponent
   ],
   imports: [
     BrowserModule,
