@@ -29,6 +29,8 @@ export class LoginComponent implements OnInit {
       if (this.api.authenticated) {
         this.isLoadingResults = false;
         this.router.navigate(['/userdetails']);
+      } else {
+        this.isLoadingResults = false;
       }
     });
   }

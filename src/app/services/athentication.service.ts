@@ -25,7 +25,7 @@ export class AthenticationService {
       }
       return callback && callback();
     });
-
+    return callback && callback();
   }
 
 }

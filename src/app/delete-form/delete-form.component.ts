@@ -21,7 +21,7 @@ export class DeleteFormComponent implements OnInit {
 
   onDelete() {
     this.api.fileDelete(this.route.snapshot.params.id).subscribe(res => {
-      console.log(res);
+      this.router.navigateByUrl('/userdetails');
     });
   }
 }
